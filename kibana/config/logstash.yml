@@ -1,3 +1,0 @@
-#sets IP and port of Logstash REST API to check status
-http.host: "0.0.0.0"
-http.port: 9600

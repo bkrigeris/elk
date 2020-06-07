@@ -1,5 +1,5 @@
 # pull the logstash docker from Elastic's docker registry
-FROM docker.elastic.co/logstash/logstash:7.7.0
+FROM docker.elastic.co/logstash/logstash:7.7.1
 
 # remove default logstash.conf file
 RUN rm -f /usr/share/logstash/pipeline/logstash.conf
