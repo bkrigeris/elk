@@ -6,4 +6,4 @@ ADD config/elasticsearch.yml /usr/share/elasticsearch/config/
 
 #set ports to be exposed
 EXPOSE 9200/tcp
-EXPOSE 9300/tcp
+#EXPOSE 9300/tcp
