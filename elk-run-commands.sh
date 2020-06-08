@@ -6,8 +6,9 @@ docker run --rm -d \
 logstash:latest logstash
 
 docker run --rm -d -p 9200:9200 \
--v ~/Documents/njit/it610/project/final/elasticsearch/data:/usr/share/elasticsearch/data \
--v ~/Documents/njit/it610/project/final/elasticsearch/logs:/usr/share/elasticsearch/logs \
+--name elastic-server \
+-v ~/elasticsearch/data:/usr/share/elasticsearch/data \
+-v ~/elasticsearch/logs:/usr/share/elasticsearch/logs \
 elasticsearch:latest elasticsearch
 
 docker run --rm -d \
