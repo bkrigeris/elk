@@ -1,0 +1,14 @@
+docker run --rm -it \
+--name kibana-server \
+-p 5601:5601/tcp \
+kibana:latest kibana
+
+docker run --rm -it -p 9200:9200 \
+-v ~/Documents/njit/it610/project/final/elasticsearch/data:/usr/share/elasticsearch/data \
+-v ~/Documents/njit/it610/project/final/elasticsearch/logs:/usr/share/elasticsearch/logs \
+elasticsearch:latest elasticsearch
+
+docker run --rm -it \
+--name logstash-server \
+-p 9600:9600/tcp -p 5000:5000/tcp -p 5000:5000/udp \
+ logstash:latest logstash

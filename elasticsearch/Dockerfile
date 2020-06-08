@@ -1,12 +1,8 @@
 # pull the elastic search docker from Elastic's docker registry
 FROM docker.elastic.co/elasticsearch/elasticsearch:7.7.1
+ENV discovery.type=single-node
 
-# remove default logstash.conf file
-#RUN rm -f /usr/share/logstash/pipeline/logstash.conf
-
-# add logstash files from local directory
-#ADD pipeline/logstash.conf /usr/share/logstash/pipeline/
-#ADD config/logstash.yml /usr/share/logstash/config/
+ADD config/elasticsearch.yml /usr/share/elasticsearch/config/
 
 #set ports to be exposed
 EXPOSE 9200/tcp
