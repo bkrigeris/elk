@@ -14,7 +14,9 @@ services:
     ports:
     - "9300:9300/tcp"
     - "9200:9200/tcp"
-  
+    volumes:
+      - ~/elasticsearch/data:/usr/share/elasticsearch/data
+      - ~/elasticsearch/data:/usr/share/elasticsearch/logs
     
   kibana:
     build: ./kibana
