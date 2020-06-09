@@ -1,0 +1,31 @@
+version: '1'
+services:
+  logstash:
+    build:
+    context: ./logstash
+    dockerfile: Dockerfile-alternate
+    image: logstash:latest
+    ports:
+    - "5000:5000/tcp"
+    - "9600:9600/tcp"
+    - "5000:5000/udp"
+
+
+
+  elasticsearch:
+    build:
+    context: ./elasticsearch
+    dockerfile: Dockerfile-alternate
+    image: elasticsearch:latest
+    ports:
+    - "9300:9300/tcp"
+    - "9200:9200/tcp"
+  
+    
+  kibana:
+    build:
+    context: ./kibana
+    dockerfile: Dockerfile-alternate
+    image: kibana:latest
+    ports:
+    - "5601:5601/tcp"
