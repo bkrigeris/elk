@@ -39,6 +39,13 @@ logstash.yml
 logstash.conf
 :  a file that defines logstash operational settings for input, filter and output configuration. Complete reference can be found @ <https://www.elastic.co/guide/en/logstash/current/index.html>
 
+### Elastic Search Docker Components
+Dockerfile 
+:  this is what docker engine is using to build the container image. It contains instructions for base image and additional files that are added image container. Complete reference can be found @ <https://docs.docker.com/engine/reference/builder/>
+
+elasticsearch.yml
+:  a file that defines elastic search configuration settings. Complete reference can be found @ <https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html>
+
 
 ### Elastic Search Docker Components
 
