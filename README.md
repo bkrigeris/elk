@@ -11,7 +11,7 @@ While this Elastic Stack is not designed for enterprise usage, it can be spun up
 ## Prerequisites
 
 ### Docker
-Install Docker and Docker Compose on the system where you'll build and run the container. Instructions for your operating system can be found @ <https://docs.docker.com/get-docker/>
+Install Docker and Docker Compose on the system where you'll build and run the containers. Instructions for your operating system can be found @ <https://docs.docker.com/get-docker/>
 
 ### Git Client
 Git installation can be found @ <https://www.atlassian.com/git/tutorials/install-git>
