@@ -20,9 +20,9 @@ Git installation can be found @ <https://www.atlassian.com/git/tutorials/install
 ## Building Elastic Stack Docker Containers
 
 ### Elastic Stack components
-Logstash - <https://www.elastic.co/logstash>
-Elastic Search - <https://www.elastic.co/elasticsearch/>
-Kibana - <https://www.elastic.co/kibana>
+Logstash : <https://www.elastic.co/logstash>
+Elastic Search : <https://www.elastic.co/elasticsearch/>
+Kibana : <https://www.elastic.co/kibana>
 
 ### Logstash Docker Components
 Dockerfile 
