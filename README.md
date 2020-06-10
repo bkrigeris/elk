@@ -1,25 +1,30 @@
-# Project Name: Lightweight Log Collector
+# Project Name: Lightweight Elastic Stack
 
 ## Objective of this project
 
-This object of this project is to have a lightweight, easy to install and deploy syslog or any other type of log collector. The core installation behind this container is Logstash, a part of Elastic Stack. 
+This object of this project is to have a lightweight, easy to install and deploy Elastic Stack.
 
 ## Target audience for this project
 
-While this container is not designed for enterprise usage, it can be spun up quickly and easily to stand up a log collector to help a network engineer or system administrator capture logs and send them to a remote system. This is especially helpful when troubleshooting Cisco IOS devices that don't retain logs on reboot or have a small syslog buffers.
+While this Elastic Stack is not designed for enterprise usage, it can be spun up quickly and easily to help a network engineer or system administrator capture logs and send them to a remote system. This is especially helpful when troubleshooting Cisco IOS devices that don't retain logs on reboot or have a small syslog buffers.
 
 ## Prerequisites
 
 ### Docker
-Install Docker on the system where you'll build and run the container. Instructions for your operating system can be found @ <https://docs.docker.com/get-docker/>
+Install Docker and Docker Compose on the system where you'll build and run the container. Instructions for your operating system can be found @ <https://docs.docker.com/get-docker/>
 
 ### Git Client
 Git installation can be found @ <https://www.atlassian.com/git/tutorials/install-git>
 
 
-## Building Docker Container
+## Building Elastic Stack Docker Containers
 
-### Components
+### Elastic Stack components
+Logstash - <https://www.elastic.co/logstash>
+Elastic Search - <https://www.elastic.co/elasticsearch/>
+Kibana - <https://www.elastic.co/kibana>
+
+### Logstash Docker Components
 Dockerfile 
 :  this is what docker engine is using to build the container image. It contains instructions for base image and additional files that are added image container. Complete reference can be found @ <https://docs.docker.com/engine/reference/builder/>
 
@@ -29,14 +34,9 @@ logstash.yml
 logstash.conf
 :  a file that defines logstash operational settings for input, filter and output configuration. Complete reference can be found @ <https://www.elastic.co/guide/en/logstash/current/index.html>
 
-README.md
-:  instructions on how to install and run this container
 
-### Creating a container image
+### Elastic Search Docker Components
 
-Clone the directory and change into the directory that contains all four files. Do not forget the period at the end of the command.
-
-<pre><code>docker build -t logstash:7.7.0 . </code></pre>
 
 ## Running the logging container
 
