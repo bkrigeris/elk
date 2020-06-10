@@ -21,11 +21,11 @@ Git installation can be found @ <https://www.atlassian.com/git/tutorials/install
 
 ### Elastic Stack components
 Logstash 
-: <https://www.elastic.co/logstash>
+:  <https://www.elastic.co/logstash>
 Elastic Search 
-: <https://www.elastic.co/elasticsearch/>
+:  <https://www.elastic.co/elasticsearch/>
 Kibana 
-: <https://www.elastic.co/kibana>
+:  <https://www.elastic.co/kibana>
 
 ### Logstash Docker Components
 Dockerfile 
