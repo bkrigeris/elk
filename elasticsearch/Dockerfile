@@ -9,4 +9,4 @@ ADD config/elasticsearch.yml /usr/share/elasticsearch/config/
 
 #set ports to be exposed. Port 9300 is only needed for a cluster.
 EXPOSE 9200/tcp
-#EXPOSE 9300/tcp
+EXPOSE 9300/tcp
