@@ -38,15 +38,15 @@ Directory
   |   └ elasticsearch.yml
   ├ logstash
   | ├ Dockerfile
-  | └ config
+  | ├ config
   | | └ logstash.yml
   | └ pipeline
   |   └ logstash.conf
-  └ kibana
+  ├ kibana
   | ├ Dockerfile
   | └ config
   |   └ kibana.yml
-  └ docker-compose.yml
+  ├ docker-compose.yml
   └ README.md
 ```
 ### Logstash Docker Components
