@@ -34,17 +34,17 @@ Kibana
 Directory
   ├ elasticsearch
   | ├ Dockerfile
-  | ├ config
+  | └ config
   |   └ elasticsearch.yml
   ├ logstash
   | ├ Dockerfile
-  | ├ config
-  |   └ logstash.yml
-  | ├ pipeline
+  | └ config
+  | | └ logstash.yml
+  | └ pipeline
   |   └ logstash.conf
   └ kibana
   | ├ Dockerfile
-  | ├ config
+  | └ config
   |   └ kibana.yml
   └ docker-compose.yml
   └ README.md
