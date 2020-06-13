@@ -80,7 +80,7 @@ You can substitude localhost for IP and FQDN of the machine where Kibana is runn
 
 ## Testing the setup
 An easy way to test the container is to use Netcat to send a message to Logstash from the host machine. If doing from a remote device, substitute localhost IP 127.0.0.1 with IP address of the host the container is running on.
-```yaml
+```txt
 echo "message" | nc 127.0.0.1 5000
 ```
 
