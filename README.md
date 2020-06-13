@@ -91,7 +91,7 @@ docker-compose down
 
 ## Accessing Kibana
 On the same machine go to <http:\\localhost:5601>
-You can substitude localhost for IP and FQDN of the machine where Kibana is running. Make sure firewall on the machine
+You can substitude localhost for IP and FQDN of the machine where Kibana is running. Make sure the firewall on the machine allows inbound ```tcp 5601```.
 
 
 ## Testing the setup
