@@ -74,13 +74,15 @@ docker-compose down
 ```
 
 ## Accessing Kibana
-On the same machine got to <http:\\localhost:5601>
-You can substitude localhost for IP and FQDN of the machine where Kibana is running
+On the same machine go to <http:\\localhost:5601>
+You can substitude localhost for IP and FQDN of the machine where Kibana is running. Make sure firewall on the machine
 
 
 ## Testing the setup
 An easy way to test the container is to use Netcat to send a message to Logstash from the host machine. If doing from a remote device, substitute localhost IP 127.0.0.1 with IP address of the host the container is running on.
-<pre><code>echo "message" | nc 127.0.0.1 5000</code></pre> 
+```
+echo "message" | nc 127.0.0.1 5000
+```
 
 You will see the log in kibana.
 
