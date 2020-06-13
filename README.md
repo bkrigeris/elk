@@ -100,7 +100,7 @@ An easy way to test the container is to use Netcat to send a message to Logstash
 echo "message" | nc 127.0.0.1 5000
 ```
 
-You will see the log in kibana.
+You will see this log entry in kibana.
 
 ## Notes
 While the Elastic Stack configuration is basic and primitive, additional and complex features can be added by manipulating configuration files.
