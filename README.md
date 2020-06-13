@@ -6,7 +6,7 @@ This object of this project is to have a lightweight, easy to install and deploy
 
 ## Target audience for this project
 
-While this Elastic Stack is not designed for enterprise usage, it can be spun up quickly and easily to help a network engineer or system administrator capture logs and send them to a remote system. This is especially helpful when troubleshooting Cisco IOS devices that don't retain logs on reboot or have a small syslog buffers.
+While this Elastic Stack is not designed for enterprise usage, it can be spun up quickly and easily to help a network engineer or system administrator capture, search and visualize logs. This is especially helpful when troubleshooting Cisco IOS devices that don't retain logs on reboot or have a small syslog buffers.
 
 ## Prerequisites
 
@@ -91,7 +91,7 @@ docker-compose down
 
 ## Accessing Kibana
 On the same machine go to <http:\\localhost:5601>
-You can substitude localhost for IP and FQDN of the machine where Kibana is running. Make sure the firewall on the machine allows inbound ```tcp 5601```.
+You can substitute localhost for IP and FQDN of the machine where Kibana is running. Make sure the firewall on the machine allows inbound ```tcp 5601```.
 
 
 ## Testing the setup
