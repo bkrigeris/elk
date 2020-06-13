@@ -29,6 +29,22 @@ Elastic Search
 Kibana 
 :  <https://www.elastic.co/kibana>
 
+### Directories and files
+
+Directory
+  ├ elasticsearch
+  | ├ Dockerfile
+  | └ elasticsearch.yml
+  ├ logstash
+  | ├ Dockerfile
+  | ├ logstash.yml
+  | └ logstash.conf
+  └ kibana
+  | ├ Dockerfile
+  | └ kibana.yml
+  └ docker-compose.yml
+  └ README.md
+
 ### Logstash Docker Components
 Dockerfile 
 :  this is what docker engine is using to build the container image. It contains instructions for base image and additional files that are added image container. Complete reference can be found @ <https://docs.docker.com/engine/reference/builder/>
