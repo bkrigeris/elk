@@ -66,7 +66,7 @@ docker-compose up -d
 ```
 Note that the first time you run it, Docker will download and create new images. It can take anywhere up to 40 minutes to build and run initial Elastic Stack
 
--d flag, start the cluster headless
+```-d``` flag, starts the stack headless
 
 To bring down the stack run
 ```
@@ -80,7 +80,7 @@ You can substitude localhost for IP and FQDN of the machine where Kibana is runn
 
 ## Testing the setup
 An easy way to test the container is to use Netcat to send a message to Logstash from the host machine. If doing from a remote device, substitute localhost IP 127.0.0.1 with IP address of the host the container is running on.
-```txt
+```
 echo "message" | nc 127.0.0.1 5000
 ```
 
