@@ -2,11 +2,11 @@
 
 ## Objective of this project
 
-This object of this project is to have a lightweight, easy to install and deploy Elastic Stack.
+This objective of this project is to have a lightweight, easy to install and deploy Elastic Stack.
 
 ## Target audience for this project
 
-While this Elastic Stack is not designed for enterprise usage, it can be spun up quickly and easily to help a network engineer or system administrator capture, search and visualize logs. This is especially helpful when troubleshooting Cisco IOS devices that don't retain logs on reboot or have a small syslog buffers.
+While this Elastic Stack is not designed for the enterprise usage, it can be spun up quickly and easily to help a network engineer or system administrator capture, search and visualize logs. This is especially helpful when troubleshooting Cisco IOS devices that don't retain logs on reboot or have a small syslog buffers.
 
 ## Prerequisites
 
@@ -77,14 +77,12 @@ kibana.yml
 
 ## Running Elastic Stack
 
-
-
-In the cloned directory, where docker-compose.yml file run
+In the cloned directory, where docker-compose.yml resides run
 
 ```
 docker-compose up -d
 ```
-Note that the first time you run it, Docker will download and create new images. It can take anywhere up to 40 minutes to build and run initial Elastic Stack
+Note that the first time you run it, Docker will download and create new images. It can take anywhere up to 20 minutes to build and run initial Elastic Stack
 
 ```-d``` flag, starts the stack headless
 
@@ -103,6 +101,7 @@ An easy way to test the container is to use Netcat to send a message to Logstash
 ```
 echo "message" | nc 127.0.0.1 5000
 ```
+Make sure the firewall on the machine allows inbound ```tcp/udp 5000```.
 
 You will see this log entry in kibana.
 
