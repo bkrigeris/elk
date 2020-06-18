@@ -17,7 +17,7 @@ services:
     - "9300:9300/tcp"
     - "9200:9200/tcp"
     
-    # Define persisten volumes 
+    # Define persistent volumes 
     # These are nessessary to keep Elastic Stack data, logs and configuration persistent during destructions and rebuild of the stack
     volumes:
       - ~/elasticsearch/data:/usr/share/elasticsearch/data
