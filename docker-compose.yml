@@ -8,6 +8,7 @@ services:
   # Define Logstash Dockerfile relative location, Docker image and ports 
   logstash: 
     build: ./logstash
+    restart: always
     image: logstash:7.7.1
     ports:
     - "5000:5000/tcp"
@@ -17,6 +18,7 @@ services:
  # Define Elastic Search Dockerfile relative location, Docker image and ports 
   elasticsearch:
     build: ./elasticsearch
+    restart: always
     image: elasticsearch:7.7.1
     ports:
     - "9300:9300/tcp"
@@ -31,6 +33,7 @@ services:
   # Define Logstash Dockerfile relative location, Docker image and ports 
   kibana:
     build: ./kibana
+    restart: always
     image: kibana:7.7.1
     ports:
     - "5601:5601/tcp"
