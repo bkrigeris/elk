@@ -1,12 +1,12 @@
-# Project Name: Lightweight Elastic Stack
+# Project Name: Lightweight ELK Stack
 
 ## Objective of this project
 
-This objective of this project is to have a lightweight, easy to install and deploy Elastic Stack.
+This objective of this project is to have a lightweight, easy to install and deploy ELK.
 
 ## Target audience for this project
 
-While this Elastic Stack is not designed for the enterprise usage, it can be spun up quickly and easily to help a network engineer or system administrator capture, search and visualize logs. This is especially helpful when troubleshooting Cisco IOS devices that don't retain logs on reboot or have a small syslog buffers.
+While this ELK is not designed for the enterprise usage, it can be spun up quickly and easily to help a network engineer or system administrator capture, search and visualize logs. This is especially helpful when troubleshooting Cisco IOS devices that don't retain logs on reboot or have a small syslog buffers.
 
 ## Prerequisites
 
@@ -19,7 +19,7 @@ Git installation can be found @ <https://www.atlassian.com/git/tutorials/install
 
 ## Building Elastic Stack Docker Containers
 
-### Elastic Stack components
+### ELK components
 Logstash 
 :  <https://www.elastic.co/logstash>
 
