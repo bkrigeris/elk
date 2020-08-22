@@ -1,4 +1,9 @@
 version: '3'
+
+volumes:
+  es_data:
+  es_logs:
+
 services:
   # Define Logstash Dockerfile relative location, Docker image and ports 
   logstash: 
@@ -20,8 +25,8 @@ services:
     # Define persistent volumes 
     # These are nessessary to keep Elastic Stack data, logs and configuration persistent during destructions and rebuild of the stack
     volumes:
-      - ~/elasticsearch/data:/usr/share/elasticsearch/data
-      - ~/elasticsearch/logs:/usr/share/elasticsearch/logs
+      - es_data:/usr/share/elasticsearch/data
+      - es_logs:/usr/share/elasticsearch/logs
   
   # Define Logstash Dockerfile relative location, Docker image and ports 
   kibana:
