@@ -13,8 +13,9 @@ services:
     - "5000:5000/tcp"
     - "9600:9600/tcp"
     - "5000:5000/udp"
-    restart_policy:
-       condition: always
+    deploy:
+      restart_policy:
+        condition: always
 
  # Define Elastic Search Dockerfile relative location, Docker image and ports 
   elasticsearch:
@@ -23,8 +24,9 @@ services:
     ports:
     - "9300:9300/tcp"
     - "9200:9200/tcp"
-    restart_policy:
-       condition: always
+    deploy:
+      restart_policy:
+        condition: always
     
     # Define persistent volumes 
     # These are nessessary to keep Elastic Stack data, logs and configuration persistent during destructions and rebuild of the stack
@@ -38,5 +40,6 @@ services:
     image: kibana:7.7.1
     ports:
     - "5601:5601/tcp"
-    restart_policy:
-       condition: always
+    deploy:
+      restart_policy:
+        condition: always
